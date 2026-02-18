@@ -1,0 +1,42 @@
+./langmuir.txt:1912:./src/user/MOM_wave_interface.F90:132:                              !! See Reichl et al., 2016 KPP-LT approach
+./langmuir.txt:1913:./src/user/MOM_wave_interface.F90:326:  call get_param(param_file, mdl, "DEFAULT_ANSWER_DATE", default_answer_date, &
+./langmuir.txt:1914:./src/user/MOM_wave_interface.F90:1276:                          "Suggest to make sure USE_LT is set/overridden to False or choose "//&
+./config_src/drivers/FMS_cap/ocean_model_MOM.F90:58:use MOM_wave_interface, only: wave_parameters_CS, MOM_wave_interface_init
+./config_src/drivers/FMS_cap/ocean_model_MOM.F90:59:use MOM_wave_interface, only: Update_Surface_Waves
+./config_src/drivers/FMS_cap/ocean_model_MOM.F90:398:  ! MOM_wave_interface_init is called regardless of the value of USE_WAVES because
+./config_src/drivers/FMS_cap/ocean_model_MOM.F90:400:  call MOM_wave_interface_init(OS%Time, OS%grid, OS%GV, OS%US, param_file, OS%Waves, OS%diag)
+./config_src/drivers/solo_driver/MOM_driver.F90:70:  use MOM_wave_interface,  only : wave_parameters_CS, MOM_wave_interface_init
+./config_src/drivers/solo_driver/MOM_driver.F90:71:  use MOM_wave_interface,  only : Update_Surface_Waves
+./config_src/drivers/solo_driver/MOM_driver.F90:324:  ! MOM_wave_interface_init is called regardless of the value of USE_WAVES because
+./config_src/drivers/solo_driver/MOM_driver.F90:326:  call MOM_wave_interface_init(Time, grid, GV, US, param_file, Waves_CSp, diag)
+./config_src/drivers/STALE_mct_cap/mom_ocean_model_mct.F90:62:use MOM_wave_interface,       only : wave_parameters_CS, MOM_wave_interface_init
+./config_src/drivers/STALE_mct_cap/mom_ocean_model_mct.F90:63:use MOM_wave_interface,       only : Update_Surface_Waves
+./config_src/drivers/STALE_mct_cap/mom_ocean_model_mct.F90:383:  ! MOM_wave_interface_init is called regardless of the value of USE_WAVES because
+./config_src/drivers/STALE_mct_cap/mom_ocean_model_mct.F90:385:  call MOM_wave_interface_init(OS%Time, OS%grid, OS%GV, OS%US, param_file, OS%Waves, OS%diag)
+./config_src/drivers/nuopc_cap/mom_ocean_model_nuopc.F90:58:use MOM_wave_interface,      only : wave_parameters_CS, MOM_wave_interface_init
+./config_src/drivers/nuopc_cap/mom_ocean_model_nuopc.F90:59:use MOM_wave_interface,      only : Update_Surface_Waves, query_wave_properties
+./config_src/drivers/nuopc_cap/mom_ocean_model_nuopc.F90:410:  ! MOM_wave_interface_init is called regardless of the value of USE_WAVES because
+./config_src/drivers/nuopc_cap/mom_ocean_model_nuopc.F90:412:  call MOM_wave_interface_init(OS%Time, OS%grid, OS%GV, OS%US, param_file, OS%Waves, OS%diag)
+./findGOTM.txt:411:./src/user/MOM_wave_interface.F90:2214:!! implemented (perhaps via GOTM, work in progress).
+./src/core/MOM_dynamics_unsplit.F90:97:use MOM_wave_interface, only: wave_parameters_CS
+./src/core/MOM_CoriolisAdv.F90:21:use MOM_wave_interface, only : wave_parameters_CS
+./src/core/MOM_dynamics_split_RK2.F90:78:use MOM_wave_interface,        only : wave_parameters_CS, Stokes_PGF
+./src/core/MOM.F90:155:use MOM_wave_interface,        only : wave_parameters_CS, waves_end, waves_register_restarts
+./src/core/MOM.F90:156:use MOM_wave_interface,        only : Update_Stokes_Drift
+./src/core/MOM_dynamics_split_RK2b.F90:76:use MOM_wave_interface,        only: wave_parameters_CS, Stokes_PGF
+./src/user/MOM_wave_interface.F90:2:module MOM_wave_interface
+./src/user/MOM_wave_interface.F90:29:public MOM_wave_interface_init ! Public interface to fully initialize the wave routines.
+./src/user/MOM_wave_interface.F90:211:  real :: VonKar = -1.0 !< The von Karman coefficient as used in the MOM_wave_interface module [nondim]
+./src/user/MOM_wave_interface.F90:277:!> Initializes parameters related to MOM_wave_interface
+./src/user/MOM_wave_interface.F90:278:subroutine MOM_wave_interface_init(time, G, GV, US, param_file, CS, diag)
+./src/user/MOM_wave_interface.F90:288:  character(len=40)  :: mdl = "MOM_wave_interface" !< This module's name.
+./src/user/MOM_wave_interface.F90:608:end subroutine MOM_wave_interface_init
+./src/user/MOM_wave_interface.F90:1084:      call MOM_error(FATAL, "MOM_wave_interface is unable to find file "//trim(CS%SurfBandFileName))
+./src/user/MOM_wave_interface.F90:1097:                              trim(CS%SurfBandFileName)//" in MOM_wave_interface.")
+./src/user/MOM_wave_interface.F90:2142:!> Register wave restart fields. To be called before MOM_wave_interface_init
+./src/user/MOM_wave_interface.F90:2155:  character(len=40)  :: mdl = "MOM_wave_interface" !< This module's name.
+./src/user/MOM_wave_interface.F90:2216:end module MOM_wave_interface
+./src/parameterizations/vertical/MOM_vert_friction.F90:30:use MOM_wave_interface, only : wave_parameters_CS
+./src/parameterizations/vertical/MOM_energetic_PBL.F90:22:use MOM_wave_interface, only : wave_parameters_CS, Get_Langmuir_Number
+./src/parameterizations/vertical/MOM_diabatic_driver.F90:76:use MOM_wave_interface,      only : wave_parameters_CS
+./src/parameterizations/vertical/MOM_CVMix_KPP.F90:20:use MOM_wave_interface, only : wave_parameters_CS, Get_Langmuir_Number, get_wave_method

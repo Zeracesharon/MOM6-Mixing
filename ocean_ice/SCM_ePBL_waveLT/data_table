@@ -1,0 +1,52 @@
+"ATM" , "p_surf"         , ""    , ""                                   , "none"    ,  100000.0
+"ATM" , "p_bot"          , ""    , ""                                   , "none"    ,  100000.0
+"ATM" , "t_bot"          , ""    , ""                                   , "none"    ,  302.4
+"ATM" , "sphum_bot"      , ""    , ""                                   , "none"    ,  0.03
+"ATM" , "u_bot"          , "", "" , "none",   0.
+"ATM" , "v_bot"          , "", "" , "none",   0.
+"ATM" , "z_bot"          , ""    , ""                                   , "none"    , 10.0
+"ATM" , "gust"           , ""    , ""                                   , "none"    ,  1.0e-4
+"ICE" , "lw_flux"        , ""    , ""                                   , "none" ,  0.0
+"ICE" , "t_flux"         , ""    , ""                                   , "none" ,  0.0
+"ICE" , "q_flux"         , ""    , ""                                   , "none" ,  0.0
+"ICE" , "sw_flux_vis_dir", ""    , ""                                   , "none" ,  0.0
+"ICE" , "sw_flux_vis_dif", ""    , ""                                   , "none" ,  0.0
+"ICE" , "sw_flux_nir_dir", ""    , ""                                   , "none" ,  0.0
+"ICE" , "sw_flux_nir_dif", ""    , ""                                   , "none" ,  0.0
+"ICE" , "lprec"          , ""    , ""                                   , "none" ,  0.0
+"ICE" , "fprec"          , ""    , ""                                   , "none" ,  0.0
+"ICE" , "runoff"         , ""    , ""                                   , "none" ,  0.0
+"ICE" , "calving"        , ""    , ""                                   , "none"  ,  0.0
+"ICE" , "dhdt"           , ""    , ""                                   , "none"  ,  0.0
+"ICE" , "dedt"           , ""    , ""                                   , "none"  ,  0.0
+"ICE" , "drdt"           , ""    , ""                                   , "none"  ,  0.0
+"ICE" , "u_flux"         ,"Taux" ,"INPUT/Hurr.nc"                 , "bilinear"   ,-1.
+"ICE" , "v_flux"         ,"Tauy" ,"INPUT/Hurr.nc"                 , "bilinear"   ,-1.
+"OCN" , "Usx1" , "Usx1" , "INPUT/Hurr.nc" , "bilinear" , 1.0
+"OCN" , "Usy1" , "Usy1" , "INPUT/Hurr.nc" , "bilinear" , 1.0
+"OCN" , "Usx2" , "Usx2" , "INPUT/Hurr.nc" , "bilinear" , 1.0
+"OCN" , "Usy2" , "Usy2" , "INPUT/Hurr.nc" , "bilinear" , 1.0
+"OCN" , "Usx3" , "Usx3" , "INPUT/Hurr.nc" , "bilinear" , 1.0
+"OCN" , "Usy3" , "Usy3" , "INPUT/Hurr.nc" , "bilinear" , 1.0
+"OCN" , "Usx4" , "Usx4" , "INPUT/Hurr.nc" , "bilinear" , 1.0
+"OCN" , "Usy4" , "Usy4" , "INPUT/Hurr.nc" , "bilinear" , 1.0
+"OCN" , "Usx5" , "Usx5" , "INPUT/Hurr.nc" , "bilinear" , 1.0
+"OCN" , "Usy5" , "Usy5" , "INPUT/Hurr.nc" , "bilinear" , 1.0
+"OCN" , "Usx6" , "Usx6" , "INPUT/Hurr.nc" , "bilinear" , 1.0
+"OCN" , "Usy6" , "Usy6" , "INPUT/Hurr.nc" , "bilinear" , 1.0
+"OCN" , "Usx7" , "Usx7" , "INPUT/Hurr.nc" , "bilinear" , 1.0
+"OCN" , "Usy7" , "Usy7" , "INPUT/Hurr.nc" , "bilinear" , 1.0
+"OCN" , "Usx8" , "Usx8" , "INPUT/Hurr.nc" , "bilinear" , 1.0
+"OCN" , "Usy8" , "Usy8" , "INPUT/Hurr.nc" , "bilinear" , 1.0
+"OCN" , "Usx9" , "Usx9" , "INPUT/Hurr.nc" , "bilinear" , 1.0
+"OCN" , "Usy9" , "Usy9" , "INPUT/Hurr.nc" , "bilinear" , 1.0
+"OCN" , "Usx10" , "Usx10" , "INPUT/Hurr.nc" , "bilinear" , 1.0
+"OCN" , "Usy10" , "Usy10" , "INPUT/Hurr.nc" , "bilinear" , 1.0
+"OCN" , "Usx11" , "Usx11" , "INPUT/Hurr.nc" , "bilinear" , 1.0
+"OCN" , "Usy11" , "Usy11" , "INPUT/Hurr.nc" , "bilinear" , 1.0
+"OCN" , "Usx12" , "Usx12" , "INPUT/Hurr.nc" , "bilinear" , 1.0
+"OCN" , "Usy12" , "Usy12" , "INPUT/Hurr.nc" , "bilinear" , 1.0
+"OCN" , "Usx13" , "Usx13" , "INPUT/Hurr.nc" , "bilinear" , 1.0
+"OCN" , "Usy13" , "Usy13" , "INPUT/Hurr.nc" , "bilinear" , 1.0
+"OCN" , "Usx14" , "Usx14" , "INPUT/Hurr.nc" , "bilinear" , 1.0
+"OCN" , "Usy14" , "Usy14" , "INPUT/Hurr.nc" , "bilinear" , 1.0

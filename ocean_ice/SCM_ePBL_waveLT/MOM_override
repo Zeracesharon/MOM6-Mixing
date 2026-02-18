@@ -1,0 +1,36 @@
+! Blank file in which we can put "overrides" for parameters
+!VERBOSITY = 9
+#override NIGLOBAL = 4
+#override NJGLOBAL = 4
+#override NIHALO = 3
+#override NJHALO = 3
+#override COORD_CONFIG = "ALE"
+#override INTERPOLATION_SCHEME = "PPM_H4"
+#override REGRIDDING_COORDINATE_MODE = "Z*"
+!#override ALE_COORDINATE_CONFIG = "FNC1:2,6500,6,.01"
+#override ALE_COORDINATE_CONFIG = UNIFORM
+#override REENTRANT_Y = True
+#override REENTRANT_X = True
+#override SAVE_INITIAL_CONDS = True
+
+#override DT=300
+#override HOMOGENIZE_FORCINGS = True
+#override HOMOGENIZE_SURFBANDS = True
+#override UPDATE_USTAR = True
+
+#override USE_JACKSON_PARAM = True
+#override EPBL_USE_SHEAR_ENERGY_COUPLING = True
+#override EPBL_SHEAR_ENERGY_SHUTDOWN_ML = True
+#override EPBL_SHEAR_ENERGY_WARN_IF_NO_KS = True
+#override EPBL_LT_RESCALE_BY_SHEAR = True
+#override SHEAR_LT_MODE = preserve_fraction
+#override MIX_LEN_EXPONENT =3
+#override IS_KS_WEIGHT = True
+#override W_RATIO = 0.7
+#override EPBL_LT_RESCALE_GAMMA=1
+#override USE_LA_LI2016 = False
+#override EPBL_LT = True
+#override USE_WAVES = True
+#override WAVE_METHOD = SURFACE_BANDS
+SURFBAND_SOURCE = DATAOVERRIDE
+SURFBAND_FILENAME = INPUT/Hurr.nc

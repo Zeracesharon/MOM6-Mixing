@@ -1,0 +1,700 @@
+./docs/references.bib:83:@book{GOTM,
+./docs/references.bib:85:    title = "{GOTM}: Scientific Docmentation",
+./pkg/GOTM/include/cppdefs.h:2:! definitions. Infact GOTM will not compile when this file is not
+./pkg/GOTM/templates/iroutine.txt:2:! GOTM Internal Subroutine template.
+./pkg/GOTM/doc/README:5:Currently, there are three versions of the GOTM documentation with the
+./pkg/GOTM/doc/README:24:GOTM web documentation. The web version is produced from the 
+./pkg/GOTM/doc/airseaIntro.tex:9:This module provides the surface forcing for GOTM. For all dynamic
+./pkg/GOTM/doc/airseaIntro.tex:38:momentum fluxes implemented into GOTM. They are either prescribed (as
+./pkg/GOTM/doc/meanflowIntro.tex:10:mean flow variables used in geophysical models. In GOTM, these
+./pkg/GOTM/doc/meanflowIntro.tex:18:field can be decomposed into a mean and a fluctuating part. In GOTM, 
+./pkg/GOTM/doc/meanflowIntro.tex:38:Note that, if not explicitly mentioned, GOTM uses the units kg, m, s,
+./pkg/GOTM/doc/meanflowIntro.tex:44:Due to the one-dimensional character of GOTM, the state-variables
+./pkg/GOTM/doc/meanflowIntro.tex:65:Another option in GOTM for parameterising the advection of $\Theta$
+./pkg/GOTM/doc/meanflowIntro.tex:81:GOTM, we have thus included the option of prescribing a vertical
+./pkg/GOTM/doc/bioIntro.tex:252:module of GOTM. The interface between an application using the turbulence
+./pkg/GOTM/doc/turbulenceIntro.tex:19:GOTM to compute the vertical turbulent fluxes. Simple models rely on
+./pkg/GOTM/doc/turbulenceIntro.tex:34:of convection. Note, that the current version of GOTM identifies the
+./pkg/GOTM/doc/turbulenceIntro.tex:58:There are different possibilities in GOTM to compute the scales $q$ (or
+./pkg/GOTM/doc/turbulenceIntro.tex:60:complexity, they are ordered in GOTM in the following fashion.
+./pkg/GOTM/doc/turbulenceIntro.tex:86: length-scale determining variables implemented in GOTM, such as the
+./pkg/GOTM/doc/turbulenceIntro.tex:103:length-scale, GOTM also supports an ordering scheme according to the
+./pkg/GOTM/doc/turbulenceIntro.tex:121: \cite{SchumannGerz95} which has been implemented in GOTM (see
+./pkg/GOTM/doc/turbulenceIntro.tex:148: implemented into GOTM. An up-to-date account of their derivation can
+./pkg/GOTM/doc/turbulenceIntro.tex:174:Since one-point second-order models are an essential part of GOTM,
+./pkg/GOTM/doc/turbulenceIntro.tex:207:is, however, neglected in the current version of GOTM.
+./pkg/GOTM/doc/turbulenceIntro.tex:231:$F^b_i$ is neglected in the current version of GOTM.
+./pkg/GOTM/doc/turbulenceIntro.tex:288:of Explicit Algebraic Models (EASMs), the models implemented in GOTM
+./pkg/GOTM/doc/turbulenceIntro.tex:292:engineering, virually all authors used $c^*_1=0$ in \eq{Phi}. In GOTM,
+./pkg/GOTM/doc/turbulenceIntro.tex:607:is not yet completely explicit. In the numerical scheme of GOTM, they
+./pkg/GOTM/doc/observationsIntro.tex:5:\section{Working with observed data in GOTM}
+./pkg/GOTM/doc/observationsIntro.tex:7:In the context of GOTM, the term `observations' should be understood
+./pkg/GOTM/doc/observationsIntro.tex:9:generated artificially.  The inclusion of such data into GOTM can
+./pkg/GOTM/doc/observationsIntro.tex:14:Two different types of `observations' are considered so far in GOTM:
+./pkg/GOTM/doc/observationsIntro.tex:29:used directly during the calculations in GOTM. but can be conveniently 
+./pkg/GOTM/doc/introduction.tex:7:\subsection{What is GOTM?}
+./pkg/GOTM/doc/introduction.tex:8:GOTM is the abbreviation for `General Ocean Turbulence Model'. It is a
+./pkg/GOTM/doc/introduction.tex:17:quantities. The strength of GOTM is the vast number of well-tested
+./pkg/GOTM/doc/introduction.tex:24:GOTM (empirical models, energy models, two-equation models, Algebraic
+./pkg/GOTM/doc/introduction.tex:28:of the model, GOTM has been growing considerably with the years, and
+./pkg/GOTM/doc/introduction.tex:34:GOTM for their own projects. Even though the modules developed by
+./pkg/GOTM/doc/introduction.tex:37:structure of GOTM, as downloadable from our web-site at {\tt
+./pkg/GOTM/doc/introduction.tex:39:groups. In that sense, GOTM is an integrated, community based software
+./pkg/GOTM/doc/introduction.tex:45:\subsection{The idea behind GOTM}
+./pkg/GOTM/doc/introduction.tex:46:Computer codes similar to pieces of GOTM can be found at many
+./pkg/GOTM/doc/introduction.tex:59:To overcome these problems, the GOTM project was intiated, its
+./pkg/GOTM/doc/introduction.tex:60:purpose being twofold. First, GOTM should provide an integrative
+./pkg/GOTM/doc/introduction.tex:67:however, GOTM should also be a research tool for those interested in
+./pkg/GOTM/doc/introduction.tex:69:algorithms. This implies that GOTM should always contain the
+./pkg/GOTM/doc/introduction.tex:71:current version of GOTM was developed under these premises.
+./pkg/GOTM/doc/introduction.tex:75:and models embedded in GOTM can be traced back to scientific
+./pkg/GOTM/doc/introduction.tex:82:This document is the official scientific documentation of GOTM. Due to
+./pkg/GOTM/doc/introduction.tex:83:the fast and continuing evolution of GOTM, we have been looking for a
+./pkg/GOTM/doc/introduction.tex:85:documentation for GOTM. We decided for the following strategy.
+./pkg/GOTM/doc/introduction.tex:87:Every module of GOTM is accompanied by an introductory text on the
+./pkg/GOTM/doc/introduction.tex:102:\emph{every} FORTRAN file of GOTM, extracts the \LaTeX\ parts, and
+./pkg/GOTM/doc/introduction.tex:115:If you are new to GOTM, we recommend to completely go through the core
+./pkg/GOTM/doc/introduction.tex:116:parts of GOTM described in \sect{sec:mainIntro}, \sect{sec:meanflowIntro},
+./pkg/GOTM/doc/introduction.tex:126:illustrating particular scenarios prepared for GOTM. This section contains
+./pkg/GOTM/doc/introduction.tex:128:implementation of each scenario currently available in GOTM. Scenarios
+./pkg/GOTM/doc/introduction.tex:133:GOTM are introduced in a practical way.
+./pkg/GOTM/doc/introduction.tex:137:to run GOTM on a number of well-known platforms is compiled at {\tt
+./pkg/GOTM/doc/introduction.tex:138:www.gotm.net}. If you wish to directly contact to the GOTM developers,
+./pkg/GOTM/doc/introduction.tex:140:of GOTM, who signed up on the GOTM web page, will be on the users' mailing
+./pkg/GOTM/doc/introduction.tex:142:bug fixes, and new versions of GOTM are communicated via this list.
+./pkg/GOTM/doc/introduction.tex:147:GOTM Team for their persisting cooperation. These are particularly
+./pkg/GOTM/doc/introduction.tex:148:members from the very first days of GOTM which took place at the Joint
+./pkg/GOTM/doc/introduction.tex:155:to acknowledge those of the almost 200 subscribed users of GOTM from
+./pkg/GOTM/doc/introduction.tex:156:all over the world who helped us to improve GOTM, reported bugs, and
+./pkg/GOTM/doc/introduction.tex:158:important role which GOTM played in several projects, mostly funded by
+./pkg/GOTM/doc/introduction.tex:159:the European Commission, which helped a lot to maintain GOTM.  These
+./pkg/GOTM/doc/introduction.tex:166:Domain Software without which a project like GOTM would be
+./pkg/GOTM/doc/mainIntro.tex:5:\section{The GOTM main program \label{sec:mainIntro}}
+./pkg/GOTM/doc/mainIntro.tex:10:components of GOTM. Almost no actual computations are carried out
+./pkg/GOTM/doc/outputIntro.tex:7:GOTM provides an easily extendible interface for storing calculated results.
+./pkg/GOTM/doc/outputIntro.tex:13:In GOTM output is triggered by {\tt do\_output()}
+./pkg/GOTM/doc/outputIntro.tex:15:Completely separated from the core of GOTM, a format specific
+./pkg/GOTM/doc/cases.tex:5:\section{GOTM scenarios \label{sec:cases}}
+./pkg/GOTM/doc/cases.tex:7:In this section, all scenarios included in the GOTM homepage for download
+./pkg/GOTM/doc/cases.tex:10:the scenarios can be found on the GOTM homepage, {\tt www.gotm.net}.
+./pkg/GOTM/doc/cases.tex:34:\caption{List of GOTM scenarios described in this section}
+./pkg/GOTM/doc/cases.tex:42:In this subsection, the performance of GOTM in some idealised
+./pkg/GOTM/doc/cases.tex:51:for new GOTM users. We supplied several input files for these
+./pkg/GOTM/doc/cases.tex:68:A set of GOTM input files (containing all specifications needed for
+./pkg/GOTM/doc/cases.tex:72:kepsilon\_nml/} to the directory with the GOTM executable. We will
+./pkg/GOTM/doc/cases.tex:74:to install GOTM and create the executable is described on the GOTM web
+./pkg/GOTM/doc/cases.tex:103:If you run this scenario, GOTM will write information about the run
+./pkg/GOTM/doc/cases.tex:118:gotmturb.nml}. Then, GOTM will automatically change the model
+./pkg/GOTM/doc/cases.tex:124:current directory, GOTM will use the Mellor-Yamada model described in
+./pkg/GOTM/doc/cases.tex:149:interpreted by GOTM is described in \sect{sec:extpressure} and briefly
+./pkg/GOTM/doc/cases.tex:159:the GOTM executable. Note that in {\tt gotmturb.nml} we now set {\tt
+./pkg/GOTM/doc/cases.tex:161:from a second-order turbulence model. A new thing in GOTM 3.2 is that
+./pkg/GOTM/doc/cases.tex:188:Different types of models are available in GOTM for the wave-breaking
+./pkg/GOTM/doc/cases.tex:190:injection is to set {\tt ubc\_type = 2}, telling GOTM to set the type
+./pkg/GOTM/doc/cases.tex:212: directoy, and run GOTM. A dynamic equation for $k$ is used, but the
+./pkg/GOTM/doc/cases.tex:271: $\kappa$ and $d$), and GOTM will automatically generate a
+./pkg/GOTM/doc/cases.tex:299:test for the GOTM implementation of the KPP turbulence model described
+./pkg/GOTM/doc/cases.tex:307:types of initial stratifcations can be specified in GOTM. The water
+./pkg/GOTM/doc/cases.tex:378:internal pressure gradients in GOTM, but also to show the basic
+./pkg/GOTM/doc/cases.tex:607:These files can be read in into GOTM through the {\tt eobs} namelist in
+./pkg/GOTM/doc/cases.tex:611:into GOTM in order to allow for proper interpolation to the temporal 
+./pkg/GOTM/doc/cases.tex:927:The functionality of biogeochemical models in GOTM is demonstrated here for
+./pkg/GOTM/doc/cases.tex:1088:reproduced with GOTM. All GOTM modelling details have been
+./pkg/GOTM/doc/cases.tex:1125:documented the implementation of this model into GOTM.
+./pkg/GOTM/doc/cases.tex:1132:biogeochemical model into GOTM, see \cite{Burchardetal05}.
+./pkg/GOTM/doc/cases.tex:1133:For the description of the implementation into GOTM,
+./pkg/GOTM/doc/html.tex:13:% definitions used in the GOTM-manual
+./pkg/GOTM/doc/html.tex:42:   GOTM
+./pkg/GOTM/doc/letter.tex:13:% definitions used in the GOTM-manual
+./pkg/GOTM/doc/letter.tex:46:   GOTM
+./pkg/GOTM/doc/gotm.bib:411:               {T}urbulence {M}odel ({GOTM}). {A} short feasability study},
+./pkg/GOTM/doc/gotm.bib:483:   title  = "{GOTM} -- a general ocean turbulence model. {T}heory, applications and test cases",
+./pkg/GOTM/doc/a4.tex:13:% definitions used in the GOTM-manual
+./pkg/GOTM/doc/a4.tex:49:   GOTM
+./pkg/GOTM/doc/definitions.tex:7:%                 Copyright (2003) by The GOTM Team                 %
+./pkg/GOTM/doc/guiIntro.tex:5:\section{Running GOTM in a GUI\label{sec:guiIntro}}
+./pkg/GOTM/schemas/gotm-4.0.0.schema:46:         <element name="out_fmt" type="int" label="format for GOTM output">
+./pkg/GOTM/schemas/gotm-4.0.0.schema:666:               <option value="2" label="read profiles at different dates from &quot;s_prof_file&quot; and interpolate to GOTM timestep"/>
+./pkg/GOTM/schemas/gotm-4.0.0.schema:740:               <option value="2" label="read profiles at different dates from &quot;t_prof_file&quot; and interpolate to GOTM timestep"/>
+./pkg/GOTM/schemas/gotm-4.0.0.schema:1048:               <option value="2" label="read profiles at different dates from &quot;vel_prof_file&quot; and interpolate to GOTM timestep"/>
+./pkg/GOTM/schemas/gotm-4.0.0.schema:1069:               <option value="2" label="read profiles at different dates from &quot;e_prof_file&quot; and interpolate to GOTM timestep"/>
+./pkg/GOTM/schemas/gotm-4.0.0.schema:1097:               <option value="2" label="read profiles at different dates from &quot;o2_prof_file&quot; and interpolate to GOTM timestep"/>
+./pkg/GOTM/schemas/gotm-3.2.4.schema:46:         <element name="out_fmt" type="int" label="format for GOTM output">
+./pkg/GOTM/schemas/gotm-3.2.4.schema:666:               <option value="2" label="read profiles at different dates from &quot;s_prof_file&quot; and interpolate to GOTM timestep"/>
+./pkg/GOTM/schemas/gotm-3.2.4.schema:740:               <option value="2" label="read profiles at different dates from &quot;t_prof_file&quot; and interpolate to GOTM timestep"/>
+./pkg/GOTM/schemas/gotm-3.2.4.schema:1019:               <option value="2" label="read profiles at different dates from &quot;vel_prof_file&quot; and interpolate to GOTM timestep"/>
+./pkg/GOTM/schemas/gotm-3.2.4.schema:1040:               <option value="2" label="read profiles at different dates from &quot;e_prof_file&quot; and interpolate to GOTM timestep"/>
+./pkg/GOTM/schemas/gotm-3.3.2.schema:46:         <element name="out_fmt" type="int" label="format for GOTM output">
+./pkg/GOTM/schemas/gotm-3.3.2.schema:666:               <option value="2" label="read profiles at different dates from &quot;s_prof_file&quot; and interpolate to GOTM timestep"/>
+./pkg/GOTM/schemas/gotm-3.3.2.schema:740:               <option value="2" label="read profiles at different dates from &quot;t_prof_file&quot; and interpolate to GOTM timestep"/>
+./pkg/GOTM/schemas/gotm-3.3.2.schema:1019:               <option value="2" label="read profiles at different dates from &quot;vel_prof_file&quot; and interpolate to GOTM timestep"/>
+./pkg/GOTM/schemas/gotm-3.3.2.schema:1040:               <option value="2" label="read profiles at different dates from &quot;e_prof_file&quot; and interpolate to GOTM timestep"/>
+./pkg/GOTM/schemas/gotm-3.3.2.schema:1068:               <option value="2" label="read profiles at different dates from &quot;o2_prof_file&quot; and interpolate to GOTM timestep"/>
+./pkg/GOTM/schemas/gotm-5.0.schema:42:         <element name="list_fields" type="bool" label="list registrated variables in the GOTM configuration">
+./pkg/GOTM/schemas/gotm-5.0.schema:44:         <element name="out_fmt" type="int" label="format for GOTM output">
+./pkg/GOTM/schemas/gotm-5.0.schema:229:         <element name="wind_factor"  type="float" label="scale factor for u10 and v10" description="Scale factor for wind. If set to one, the original values are used. A value different from one might be applied to convert from non-GOTM units, or to test model sensitivity.">
+./pkg/GOTM/schemas/gotm-5.0.schema:303:         <element name="swr_factor"  type="float" label="scale factor for short wave solar radiation" description="Scale factor for short wave solar radiation. If set to one, the original values are used. A value different from one might be applied to convert from non-GOTM units, or to test model sensitivity.">
+./pkg/GOTM/schemas/gotm-5.0.schema:711:               <option value="2" label="read profiles at different dates from &quot;s_prof_file&quot; and interpolate to GOTM timestep" />
+./pkg/GOTM/schemas/gotm-5.0.schema:787:               <option value="2" label="read profiles at different dates from &quot;t_prof_file&quot; and interpolate to GOTM timestep" />
+./pkg/GOTM/schemas/gotm-5.0.schema:1111:               <option value="2" label="read profiles at different dates from &quot;vel_prof_file&quot; and interpolate to GOTM timestep" />
+./pkg/GOTM/schemas/gotm-5.0.schema:1133:               <option value="2" label="read profiles at different dates from &quot;e_prof_file&quot; and interpolate to GOTM timestep" />
+./pkg/GOTM/schemas/gotm-5.0.schema:1159:               <option value="2" label="read profiles at different dates from &quot;o2_prof_file&quot; and interpolate to GOTM timestep" />
+./pkg/GOTM/schemas/gotm-5.0.schema:1181:      <element name="gotm_fabm_nml" label="GOTM coupling">
+./pkg/GOTM/README.md:1:## What is GOTM?
+./pkg/GOTM/README.md:3:GOTM - the **G**eneral **O**cean **T**urbulence **M**odel is an ambitious name for a one-dimensional water column model for marine and limnological applications. It is coupled to a choice of traditional as well as state-of-the-art parameterisations for vertical turbulent mixing. The package consists of the FORTRAN source code, a number of idealised and realistic test cases, and a scientific documentation, all published under the GNU public license.
+./pkg/GOTM/README.md:5:A comprehensive description including compilation instructions are given at the official [GOTM homepage](http://www.gotm.net/portfolio/software).
+./pkg/GOTM/scripts/linux/gotm_configure.sh:4:GOTM_BASE=${GOTM_BASE:=~/GOTM/code}
+./pkg/GOTM/scripts/linux/gotm_configure.sh:22:cmake $GOTM_BASE/src \
+./pkg/GOTM/scripts/linux/gotm_configure.sh:23:      -DGOTM_EMBED_VERSION=on \
+./pkg/GOTM/scripts/linux/gotm_configure.sh:24:      -DGOTM_USE_FLEXIBLE_OUTPUT=on \
+./pkg/GOTM/scripts/linux/gotm_configure.sh:25:      -DGOTM_USE_FABM=on \
+./pkg/GOTM/src/util/lagrange.F90:131:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./pkg/GOTM/src/util/diff_center.F90:200:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./pkg/GOTM/src/util/diff_face.F90:133:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./pkg/GOTM/src/util/test_eqstate.F90:69:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./pkg/GOTM/src/util/tridiagonal.F90:186:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./pkg/GOTM/src/util/eqstate.F90:27:!  density. Note that the quantity {\tt sigma\_t} found in the GOTM output
+./pkg/GOTM/src/util/eqstate.F90:512:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./pkg/GOTM/src/util/ode_solvers_template.F90:1067:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./pkg/GOTM/src/util/convert_fluxes.F90:26:! When you call the KPP routines from another model outside GOTM, you
+./pkg/GOTM/src/util/convert_fluxes.F90:85:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./pkg/GOTM/src/util/test_time.F90:50:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./pkg/GOTM/src/util/ode_solvers.F90:1371:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./pkg/GOTM/src/util/time.F90:12:!  related to the mode time in GOTM.
+./pkg/GOTM/src/util/time.F90:500:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./pkg/GOTM/src/util/util.F90:66:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./pkg/GOTM/src/util/adv_center.F90:401:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./pkg/GOTM/src/util/gridinterpol.F90:73:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./pkg/GOTM/src/airsea/short_wave_radiation.F90:107:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./pkg/GOTM/src/airsea/test_airsea.F90:13:!  python $GOTM_BASE/scr/plot_airsea.py
+./pkg/GOTM/src/airsea/test_airsea.F90:169:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./pkg/GOTM/src/airsea/solar_zenith_angle.F90:64:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./pkg/GOTM/src/airsea/airsea_variables.F90:48:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./pkg/GOTM/src/airsea/airsea_fluxes.F90:49:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./pkg/GOTM/src/airsea/albedo_water.F90:195:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./pkg/GOTM/src/airsea/back_radiation.F90:112:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./pkg/GOTM/src/airsea/humidity.F90:117:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./pkg/GOTM/src/airsea/tst_airsea.F90:7:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./pkg/GOTM/src/airsea/airsea.F90:6:! GOTM will compute the heat/momentum fluxes for each time in the meteo file, and
+./pkg/GOTM/src/airsea/airsea.F90:8:! based on a sea state that lags one meteo time step behind the meteo data - GOTM
+./pkg/GOTM/src/airsea/airsea.F90:658:!  are interpolated to the actual time step of GOTM. Finally, the
+./pkg/GOTM/src/airsea/airsea.F90:660:!  cloud cover and the actual UTC time of GOTM, see the routine
+./pkg/GOTM/src/airsea/airsea.F90:990:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./pkg/GOTM/src/airsea/kondo.F90:180:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./pkg/GOTM/src/airsea/test_albedo.F90:12:!  python $GOTM_BASE/scr/plot_albedo.py
+./pkg/GOTM/src/output/output.F90:11:!  This module acts as an interface between GOTM and modules/routines
+./pkg/GOTM/src/output/output.F90:14:!  routines. It is not necessary to change anything in GOTM itself.
+./pkg/GOTM/src/output/output.F90:114:         FATAL 'It is not supported in this version of GOTM.'
+./pkg/GOTM/src/output/output.F90:116:         FATAL 'Thank you for using GOTM - The GOTM team.'
+./pkg/GOTM/src/output/output.F90:462:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./pkg/GOTM/src/output/asciiout.F90:191:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./pkg/GOTM/src/output/netcdf_output.F90:131:      iret = nf90_put_att(self%ncid,NF90_GLOBAL,'comment','file created by the GOTM output_manager'); call check_err(iret)
+./pkg/GOTM/src/output/ncdfout.F90:13:!  This module provides routines for saving the GOTM results using
+./pkg/GOTM/src/output/ncdfout.F90:31:!  netCDF output file after re-compiling and runnign GOTM. These extra
+./pkg/GOTM/src/output/ncdfout.F90:131:!  variables for the core GOTM model.
+./pkg/GOTM/src/output/ncdfout.F90:507:   history = 'Created by GOTM v. '//git_commit_id//' ('//git_branch_name//' branch)'
+./pkg/GOTM/src/output/ncdfout.F90:536:!  Write the GOTM core variables to the NetCDF file.
+./pkg/GOTM/src/output/ncdfout.F90:1081:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./pkg/GOTM/src/output/output_manager.F90:486:            call host%fatal_error('process_file','Error parsing output.yaml: "netcdf" specified for format of output file "'//trim(path)//'", but GOTM has been compiled without NetCDF support. Valid options are: text.')
+./pkg/GOTM/src/meanflow/intpressure.F90:162:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./pkg/GOTM/src/meanflow/meanflow.F90:139:!  to the `meanflow' component of GOTM.
+./pkg/GOTM/src/meanflow/meanflow.F90:518:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./pkg/GOTM/src/meanflow/updategrid.F90:206:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./pkg/GOTM/src/meanflow/coriolis.F90:51:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./pkg/GOTM/src/meanflow/extpressure.F90:113:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./pkg/GOTM/src/meanflow/stratification.F90:21:! forces. If GOTM used as a turbulence library in your own three-dimensional model,
+./pkg/GOTM/src/meanflow/stratification.F90:23:! routines in GOTM, is consistent with the concept of potential density and your
+./pkg/GOTM/src/meanflow/stratification.F90:184:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./pkg/GOTM/src/meanflow/shear.F90:177:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./pkg/GOTM/src/meanflow/friction.F90:126:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./pkg/GOTM/src/meanflow/convectiveadjustment.F90:114:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./pkg/GOTM/src/meanflow/vequation.F90:177:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./pkg/GOTM/src/meanflow/uequation.F90:200:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./pkg/GOTM/src/meanflow/wequation.F90:69:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./pkg/GOTM/src/meanflow/buoyancy.F90:40:!  \sect{sec:turbulenceIntro}. In the current version of GOTM,
+./pkg/GOTM/src/meanflow/buoyancy.F90:44:!  GOTM.
+./pkg/GOTM/src/meanflow/buoyancy.F90:157:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./pkg/GOTM/src/meanflow/salinity.F90:35:!  \sect{sec:turbulenceIntro}. In the current version of GOTM,
+./pkg/GOTM/src/meanflow/salinity.F90:161:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./pkg/GOTM/src/meanflow/temperature.F90:198:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./pkg/GOTM/src/extras/seagrass/seagrass.F90:399:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./pkg/GOTM/src/extras/sediment/sediment.F90:335:!  Currently, there are the following models available in GOTM:
+./pkg/GOTM/src/extras/sediment/sediment.F90:348:!    quadratic function of the ratio $u_*/u_*^c$. In GOTM, the Rouse profile
+./pkg/GOTM/src/extras/sediment/sediment.F90:639:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./pkg/GOTM/src/CMakeLists.txt:23:# Create placeholder file with version information, used when GOTM_EMBED_VERSION is off.
+./pkg/GOTM/src/CMakeLists.txt:28:# Create a custom target for generating version  information (only if GOTM_EMBED_VERSION is on)
+./pkg/GOTM/src/CMakeLists.txt:30:  option(GOTM_EMBED_VERSION "Embed GOTM version information" OFF)
+./pkg/GOTM/src/CMakeLists.txt:32:  option(GOTM_EMBED_VERSION "Embed GOTM version information" ON)
+./pkg/GOTM/src/CMakeLists.txt:34:if(GOTM_EMBED_VERSION)
+./pkg/GOTM/src/CMakeLists.txt:38:    COMMENT "Retrieving description of last GOTM commit..."
+./pkg/GOTM/src/CMakeLists.txt:70:option(GOTM_EXTRA_OUTPUT "Include additional turbulence diagnostics in output" OFF)
+./pkg/GOTM/src/CMakeLists.txt:71:mark_as_advanced(GOTM_EXTRA_OUTPUT)
+./pkg/GOTM/src/CMakeLists.txt:72:if(GOTM_EXTRA_OUTPUT)
+./pkg/GOTM/src/CMakeLists.txt:76:option(GOTM_USE_FABM "Include support for Framework for Aquatic Biogeochemical Models (fabm.net)" ON)
+./pkg/GOTM/src/CMakeLists.txt:77:if(GOTM_USE_FABM)
+./pkg/GOTM/src/CMakeLists.txt:81:#option(GOTM_USE_FLEXIBLE_OUTPUT "Use new output manager" ON)
+./pkg/GOTM/src/CMakeLists.txt:82:#if(GOTM_USE_FLEXIBLE_OUTPUT)
+./pkg/GOTM/src/CMakeLists.txt:86:#if(NOT GOTM_BUILD_LIBRARIES_ONLY OR GOTM_USE_FLEXIBLE_OUTPUT)
+./pkg/GOTM/src/CMakeLists.txt:87:  option(GOTM_USE_NetCDF "Enable output in NetCDF format" ON)
+./pkg/GOTM/src/CMakeLists.txt:88:  if(GOTM_USE_NetCDF)
+./pkg/GOTM/src/CMakeLists.txt:97:  endif(GOTM_USE_NetCDF)
+./pkg/GOTM/src/CMakeLists.txt:124:if(GOTM_EMBED_VERSION)
+./pkg/GOTM/src/CMakeLists.txt:127:set(GOTM_LIBS ${GOTM_LIBS} util)
+./pkg/GOTM/src/CMakeLists.txt:191:set(GOTM_LIBS ${GOTM_LIBS} turbulence)
+./pkg/GOTM/src/CMakeLists.txt:193:if(GOTM_USE_FABM)
+./pkg/GOTM/src/CMakeLists.txt:198:    set(FABM_EMBED_VERSION ${GOTM_EMBED_VERSION} CACHE BOOL "Embed FABM version information" FORCE)
+./pkg/GOTM/src/CMakeLists.txt:215:  set(GOTM_LIBS ${GOTM_LIBS} gotm_fabm)
+./pkg/GOTM/src/CMakeLists.txt:219:endif(GOTM_USE_FABM)
+./pkg/GOTM/src/CMakeLists.txt:221:#if(GOTM_USE_FLEXIBLE_OUTPUT)
+./pkg/GOTM/src/CMakeLists.txt:222:  if(NOT GOTM_USE_FABM)
+./pkg/GOTM/src/CMakeLists.txt:235:  if(GOTM_USE_FABM)
+./pkg/GOTM/src/CMakeLists.txt:239:  set(GOTM_LIBS ${GOTM_LIBS} output_manager)
+./pkg/GOTM/src/CMakeLists.txt:240:#endif(GOTM_USE_FLEXIBLE_OUTPUT)
+./pkg/GOTM/src/CMakeLists.txt:242:if(NOT GOTM_BUILD_LIBRARIES_ONLY)
+./pkg/GOTM/src/CMakeLists.txt:248:set(GOTM_LIBS ${GOTM_LIBS} input)
+./pkg/GOTM/src/CMakeLists.txt:264:set(GOTM_LIBS ${GOTM_LIBS} airsea)
+./pkg/GOTM/src/CMakeLists.txt:273:set(GOTM_LIBS ${GOTM_LIBS} observations)
+./pkg/GOTM/src/CMakeLists.txt:293:set(GOTM_LIBS ${GOTM_LIBS} meanflow)
+./pkg/GOTM/src/CMakeLists.txt:295:#if(NOT GOTM_USE_FLEXIBLE_OUTPUT)
+./pkg/GOTM/src/CMakeLists.txt:302:#  set(GOTM_LIBS ${GOTM_LIBS} output)
+./pkg/GOTM/src/CMakeLists.txt:303:#endif(NOT GOTM_USE_FLEXIBLE_OUTPUT)
+./pkg/GOTM/src/CMakeLists.txt:305:#option(GOTM_USE_ICE "Include ICE support" OFF)
+./pkg/GOTM/src/CMakeLists.txt:306:#if(GOTM_USE_ICE)
+./pkg/GOTM/src/CMakeLists.txt:309:#endif(GOTM_USE_ICE)
+./pkg/GOTM/src/CMakeLists.txt:311:option(GOTM_USE_SEAGRASS "Enable seagrass module" OFF)
+./pkg/GOTM/src/CMakeLists.txt:312:if(GOTM_USE_SEAGRASS)
+./pkg/GOTM/src/CMakeLists.txt:318:  #if(NOT GOTM_USE_FLEXIBLE_OUTPUT)
+./pkg/GOTM/src/CMakeLists.txt:321:  set(GOTM_LIBS ${GOTM_LIBS} seagrass)
+./pkg/GOTM/src/CMakeLists.txt:324:if(GOTM_USE_FABM)
+./pkg/GOTM/src/CMakeLists.txt:325:  #if(GOTM_USE_FLEXIBLE_OUTPUT)
+./pkg/GOTM/src/CMakeLists.txt:337:  set(GOTM_LIBS ${GOTM_LIBS} gotm_fabm_io)
+./pkg/GOTM/src/CMakeLists.txt:338:endif(GOTM_USE_FABM)
+./pkg/GOTM/src/CMakeLists.txt:347:target_link_libraries(gotm ${GOTM_LIBS})
+./pkg/GOTM/src/CMakeLists.txt:348:set(GOTM_LIBS ${GOTM_LIBS} gotm)
+./pkg/GOTM/src/CMakeLists.txt:350:if(GOTM_USE_NetCDF)
+./pkg/GOTM/src/CMakeLists.txt:352:endif(GOTM_USE_NetCDF)
+./pkg/GOTM/src/CMakeLists.txt:354:if(NOT GOTM_BUILD_LIBRARY)
+./pkg/GOTM/src/CMakeLists.txt:356:# Build GOTM executable.
+./pkg/GOTM/src/CMakeLists.txt:362:if(GOTM_USE_NetCDF AND NetCDF_STATIC_MSVC_BUILD)
+./pkg/GOTM/src/CMakeLists.txt:366:target_link_libraries(gotm_exe ${GOTM_LIBS} ${EXTERNAL_LIBS})
+./pkg/GOTM/src/CMakeLists.txt:380:  set(CMAKE_INSTALL_PREFIX ${DEFAULT_PREFIX} CACHE PATH "Directory to install GOTM in" FORCE)
+./pkg/GOTM/src/CMakeLists.txt:383:  set(CMAKE_INSTALL_PREFIX ${DEFAULT_PREFIX} CACHE PATH "Directory to install GOTM in")
+./pkg/GOTM/src/CMakeLists.txt:386:# Install GOTM library and include files, unless the host overruled this.
+./pkg/GOTM/src/CMakeLists.txt:388:install(TARGETS ${GOTM_LIBS} DESTINATION lib)
+./pkg/GOTM/src/CMakeLists.txt:419:endif(NOT GOTM_BUILD_LIBRARY)
+./pkg/GOTM/src/CMakeLists.txt:420:endif(NOT GOTM_BUILD_LIBRARIES_ONLY)
+./pkg/GOTM/src/CMakeLists.txt:422:set_property(TARGET ${GOTM_LIBS} PROPERTY FOLDER gotm)
+./pkg/GOTM/src/CMakeLists.txt:426:  set(GOTM_LIBRARIES ${GOTM_LIBS} ${EXTERNAL_LIBS} PARENT_SCOPE)
+./pkg/GOTM/src/cmake/Modules/FindNetCDF.cmake:25:set(GOTMDIR "${CMAKE_CURRENT_LIST_DIR}/../../..")
+./pkg/GOTM/src/cmake/Modules/FindNetCDF.cmake:27:# On Windows: use CMake to locte paths; default to NetCDF static library provided with GOTM.
+./pkg/GOTM/src/cmake/Modules/FindNetCDF.cmake:29:             HINTS ${GOTMDIR}/extras/netcdf/win32/3.6.3/lib
+./pkg/GOTM/src/cmake/Modules/FindNetCDF.cmake:32:          HINTS ${GOTMDIR}/extras/netcdf/win32/3.6.3/include ENV NetCDFINC
+./pkg/GOTM/src/cmake/Modules/FindNetCDF.cmake:38:get_filename_component(NetCDF_LIBRARIES_default_full "${GOTMDIR}/extras/netcdf/win32/3.6.3/lib/netcdfs.lib" ABSOLUTE)
+./pkg/GOTM/src/cmake/Modules/FindNetCDF.cmake:40:  # Win32 NetCDF library provided with GOTM is statically built against release libraries.
+./pkg/GOTM/src/cmake/Modules/FindNetCDF.cmake:48:# Use GOTM environment variables: NETCDFLIBNAME, NETCDFLIBDIR, NETCDFINC
+./pkg/GOTM/src/fabm/gotm_fabm_output.F90:335:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./pkg/GOTM/src/fabm/gotm_fabm_input.F90:302:!           Register observed variable with the GOTM-FABM driver.
+./pkg/GOTM/src/fabm/gotm_fabm_input.F90:337:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./pkg/GOTM/src/fabm/gotm_fabm.F90:146:! Initializes the GOTM-FABM driver module by reading settings from fabm.nml.
+./pkg/GOTM/src/fabm/gotm_fabm.F90:781:! This routine is called once from GOTM to provide pointers to the arrays that describe
+./pkg/GOTM/src/fabm/gotm_fabm.F90:954:   ! read in from file (gotm_fabm_input), and all variables exposed by GOTM. If FABM is still
+./pkg/GOTM/src/fabm/gotm_fabm.F90:1644:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./pkg/GOTM/src/gotm/print_version.F90:5:! !ROUTINE: print_version() - prints GOTM and optional FABM versions
+./pkg/GOTM/src/gotm/print_version.F90:11:!  Use git to obtain latest git hashes for GOTM and FABM.
+./pkg/GOTM/src/gotm/print_version.F90:12:!  Also print compiler information from GOTM.
+./pkg/GOTM/src/gotm/print_version.F90:37:   LEVEL0 'GOTM version:   ',gotm_commit_id,' (',gotm_branch_name,' branch)'
+./pkg/GOTM/src/gotm/diagnostics.F90:248:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./pkg/GOTM/src/gotm/gotm.F90:20:!  the definition of ranges of units for different purposes. In GOTM
+./pkg/GOTM/src/gotm/gotm.F90:124:! !IROUTINE: Initialise the model \label{initGOTM}
+./pkg/GOTM/src/gotm/gotm.F90:256:!  Initialize the GOTM-FABM coupler from its configuration file.
+./pkg/GOTM/src/gotm/gotm.F90:259:!  Link relevant GOTM data to FABM.
+./pkg/GOTM/src/gotm/gotm.F90:603:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./pkg/GOTM/src/gotm/register_all_variables.F90:428:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./pkg/GOTM/src/gotm/main.F90:5:! !ROUTINE: GOTM --- the main program  \label{sec:main}
+./pkg/GOTM/src/gotm/main.F90:11:! This is the main program of GOTM. However, because GOTM has been programmed
+./pkg/GOTM/src/gotm/main.F90:46:   STDERR 'GOTM started on ', systemdate(1:4), '/', &
+./pkg/GOTM/src/gotm/main.F90:55:   STDERR 'GOTM'
+./pkg/GOTM/src/gotm/main.F90:69:   STDERR 'GOTM finished on ', systemdate(1:4), '/', &
+./pkg/GOTM/src/gotm/main.F90:78:   STDERR 'GOTM'
+./pkg/GOTM/src/gotm/main.F90:165:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./pkg/GOTM/src/gotm/deprecated_output.F90:51:      LEVEL1 'Warning: out_fmt is set to 2 (NetCDF output), but GOTM has been compiled without NetCDF support. Forcing out_fmt=1 (text).'
+./pkg/GOTM/src/observations/analytical_profile.F90:45:      STDERR '*   Please edit obs.nml and restart GOTM.    *'
+./pkg/GOTM/src/observations/analytical_profile.F90:69:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./pkg/GOTM/src/observations/observations.F90:12:!  `observations' to GOTM.
+./pkg/GOTM/src/observations/observations.F90:13:!  The module operates according to the general philosophy used in GOTM,
+./pkg/GOTM/src/observations/observations.F90:22:!  internal time representation of GOTM.
+./pkg/GOTM/src/observations/observations.F90:23:!  Profiles are interpolated to the actual GOTM model grid.
+./pkg/GOTM/src/observations/observations.F90:826:!  The only input to this routine is the time (in internal GOTM
+./pkg/GOTM/src/observations/observations.F90:1005:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./pkg/GOTM/src/observations/const_NNS.F90:59:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./pkg/GOTM/src/observations/const_NNT.F90:58:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./pkg/GOTM/src/turbulence/cmue_d.F90:160:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./pkg/GOTM/src/turbulence/potentialml.F90:195:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./pkg/GOTM/src/turbulence/alpha_mnb.F90:60:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./pkg/GOTM/src/turbulence/compute_rist.F90:240:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./pkg/GOTM/src/turbulence/kbeq.F90:27:! evaluated with a simple down gradient model in GOTM.
+./pkg/GOTM/src/turbulence/kbeq.F90:159:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./pkg/GOTM/src/turbulence/cmue_ma.F90:62:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./pkg/GOTM/src/turbulence/turbulence.F90:20:! It should be pointed out that the turbulence module of GOTM may be used in
+./pkg/GOTM/src/turbulence/turbulence.F90:24:! part of GOTM is required. Vertical columns of the three-dimensional fields have
+./pkg/GOTM/src/turbulence/turbulence.F90:25:! to copied into one-dimensional vectors, which are passed to GOTM. With the help
+./pkg/GOTM/src/turbulence/turbulence.F90:26:! of this information, GOTM updates the turbulent fields and returns one-dimensional
+./pkg/GOTM/src/turbulence/turbulence.F90:28:! The `door' between the 3-D model and GOTM is the function {\tt do\_turbulence()},
+./pkg/GOTM/src/turbulence/turbulence.F90:289:! of any model currently available in GOTM.
+./pkg/GOTM/src/turbulence/turbulence.F90:291:! are known to GOTM.
+./pkg/GOTM/src/turbulence/turbulence.F90:708:! Parameter sets from different authors are converted to the GOTM
+./pkg/GOTM/src/turbulence/turbulence.F90:973:! not interested in the generic part of GOTM should have a look in
+./pkg/GOTM/src/turbulence/turbulence.F90:1291:! in GOTM, the steady-state Richardson number is determined by the
+./pkg/GOTM/src/turbulence/turbulence.F90:1445:! This routine analyses all models in GOTM for their physical properties
+./pkg/GOTM/src/turbulence/turbulence.F90:1608:      ! the GOTM turbulence module is coupled to 3D models.
+./pkg/GOTM/src/turbulence/turbulence.F90:1775:! of all turbulence models implemented in GOTM. Results are
+./pkg/GOTM/src/turbulence/turbulence.F90:1898:         LEVEL2 'with the ISPRAMIX length-scale (see GOTM-report)'
+./pkg/GOTM/src/turbulence/turbulence.F90:2014:! from a 3-D model, if the {\tt turbulence} module of GOTM is used
+./pkg/GOTM/src/turbulence/turbulence.F90:2027:!   directly from the main GOTM loop.
+./pkg/GOTM/src/turbulence/turbulence.F90:2337:! determining variable. At the moment, GOTM implements equations
+./pkg/GOTM/src/turbulence/turbulence.F90:2395:! described in \sect{sec:epsbalgebraic}, is available in GOTM.
+./pkg/GOTM/src/turbulence/turbulence.F90:2706:! to do so implemented in GOTM. It is described in \sect{sec:fkCraig}.
+./pkg/GOTM/src/turbulence/turbulence.F90:2712:! coordinate of the same name used in GOTM.
+./pkg/GOTM/src/turbulence/turbulence.F90:2718:! This type is not implemented yet in GOTM.
+./pkg/GOTM/src/turbulence/turbulence.F90:2846:! to do so implemented in GOTM. It is described in \sect{sec:fkCraig}.
+./pkg/GOTM/src/turbulence/turbulence.F90:2852:! coordinate of the same name used in GOTM.
+./pkg/GOTM/src/turbulence/turbulence.F90:2858:! This type is not implemented yet in GOTM.
+./pkg/GOTM/src/turbulence/turbulence.F90:2986:! to do so implemented in GOTM. It is described in \sect{sec:fkCraig}.
+./pkg/GOTM/src/turbulence/turbulence.F90:2992:! coordinate of the same name used in GOTM.
+./pkg/GOTM/src/turbulence/turbulence.F90:2998:! This type is not implemented yet in GOTM.
+./pkg/GOTM/src/turbulence/turbulence.F90:3121:! to do so implemented in GOTM. It is described in \sect{sec:fkCraig}.
+./pkg/GOTM/src/turbulence/turbulence.F90:3127:! coordinate of the same name used in GOTM.
+./pkg/GOTM/src/turbulence/turbulence.F90:3133:! This type is not implemented yet in GOTM.
+./pkg/GOTM/src/turbulence/turbulence.F90:3259:! to do so implemented in GOTM. It is described in \sect{sec:fkCraig}.
+./pkg/GOTM/src/turbulence/turbulence.F90:3265:! coordinate of the same name used in GOTM.
+./pkg/GOTM/src/turbulence/turbulence.F90:3271:! This type is not implemented yet in GOTM.
+./pkg/GOTM/src/turbulence/turbulence.F90:3533:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./pkg/GOTM/src/turbulence/cmue_sg.F90:65:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./pkg/GOTM/src/turbulence/variances.F90:103:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./pkg/GOTM/src/turbulence/algebraiclength.F90:20:! abbreviations, the expressions implemented in GOTM are as follows.
+./pkg/GOTM/src/turbulence/algebraiclength.F90:53:!   $\beta = 2$ in GOTM.
+./pkg/GOTM/src/turbulence/algebraiclength.F90:266:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./pkg/GOTM/src/turbulence/cmue_a.F90:212:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./pkg/GOTM/src/turbulence/genericeq.F90:118:! implemented in GOTM and are described in \sect{sec:generate}.
+./pkg/GOTM/src/turbulence/genericeq.F90:300:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./pkg/GOTM/src/turbulence/epsbalgebraic.F90:58:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./pkg/GOTM/src/turbulence/ispralength.F90:164:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./pkg/GOTM/src/turbulence/dissipationeq.F90:12:! implemented in GOTM.
+./pkg/GOTM/src/turbulence/dissipationeq.F90:245:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./pkg/GOTM/src/turbulence/kbalgebraic.F90:66:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./pkg/GOTM/src/turbulence/lengthscaleeq.F90:33:! for  ${\cal L}_z$ are implemented in GOTM, which can be activated
+./pkg/GOTM/src/turbulence/lengthscaleeq.F90:256:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./pkg/GOTM/src/turbulence/r_ratio.F90:38:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./pkg/GOTM/src/turbulence/production.F90:108:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./pkg/GOTM/src/turbulence/kpp.F90:149:! models. Presently, GOTM uses the uppermost grid point as the reference value.
+./pkg/GOTM/src/turbulence/kpp.F90:165:! two methods have been implemented in GOTM. The first method simply evaluates
+./pkg/GOTM/src/turbulence/kpp.F90:389:! If you call the GOTM KPP routines from a three-dimensional model, make sure
+./pkg/GOTM/src/turbulence/kpp.F90:656:! be interpolated "in a smart way" to the water column defined by GOTM. The corresponding
+./pkg/GOTM/src/turbulence/kpp.F90:666:! Note that for consistency, the equations of state in GOTM cannot
+./pkg/GOTM/src/turbulence/kpp.F90:2051:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./pkg/GOTM/src/turbulence/cmue_c.F90:188:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./pkg/GOTM/src/turbulence/gotm_lib_version.F90:5:! !ROUTINE: Printing GOTM library version
+./pkg/GOTM/src/turbulence/gotm_lib_version.F90:11:!  Simply prints the version number of the GOTM turbulence library to unit.
+./pkg/GOTM/src/turbulence/gotm_lib_version.F90:26:   write(unit,*) 'GOTM library version: ',git_commit_id
+./pkg/GOTM/src/turbulence/gotm_lib_version.F90:33:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./pkg/GOTM/src/turbulence/cmue_rf.F90:85:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./pkg/GOTM/src/turbulence/tkeeq.F90:183:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./pkg/GOTM/src/turbulence/fk_craig.F90:40:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./pkg/GOTM/src/turbulence/internal_wave.F90:96:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./pkg/GOTM/src/turbulence/compute_cpsi3.F90:121:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./pkg/GOTM/src/turbulence/cmue_b.F90:108:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./pkg/GOTM/src/turbulence/q2over2eq.F90:168:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./pkg/GOTM/src/turbulence/tkealgebraic.F90:94:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./pkg/GOTM/src/input/input.F90:831:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./pkg/CVMix-src/README.md:109:been used in the [GOTM](https:/gotm.net) inclusion of the CVMix mixing
+./pkg/CVMix-src/README.md:110:models as a supplement to the original turbulence models in GOTM.
+./src/user/MOM_wave_interface.F90:2214:!! implemented (perhaps via GOTM, work in progress).
+./src/parameterizations/GOTM/cmue_d.F90:160:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./src/parameterizations/GOTM/potentialml.F90:195:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./src/parameterizations/GOTM/alpha_mnb.F90:60:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./src/parameterizations/GOTM/compute_rist.F90:240:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./src/parameterizations/GOTM/kbeq.F90:27:! evaluated with a simple down gradient model in GOTM.
+./src/parameterizations/GOTM/kbeq.F90:159:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./src/parameterizations/GOTM/cmue_ma.F90:62:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./src/parameterizations/GOTM/turbulence.F90:20:! It should be pointed out that the turbulence module of GOTM may be used in
+./src/parameterizations/GOTM/turbulence.F90:24:! part of GOTM is required. Vertical columns of the three-dimensional fields have
+./src/parameterizations/GOTM/turbulence.F90:25:! to copied into one-dimensional vectors, which are passed to GOTM. With the help
+./src/parameterizations/GOTM/turbulence.F90:26:! of this information, GOTM updates the turbulent fields and returns one-dimensional
+./src/parameterizations/GOTM/turbulence.F90:28:! The `door' between the 3-D model and GOTM is the function {\tt do\_turbulence()},
+./src/parameterizations/GOTM/turbulence.F90:289:! of any model currently available in GOTM.
+./src/parameterizations/GOTM/turbulence.F90:291:! are known to GOTM.
+./src/parameterizations/GOTM/turbulence.F90:708:! Parameter sets from different authors are converted to the GOTM
+./src/parameterizations/GOTM/turbulence.F90:973:! not interested in the generic part of GOTM should have a look in
+./src/parameterizations/GOTM/turbulence.F90:1291:! in GOTM, the steady-state Richardson number is determined by the
+./src/parameterizations/GOTM/turbulence.F90:1445:! This routine analyses all models in GOTM for their physical properties
+./src/parameterizations/GOTM/turbulence.F90:1608:      ! the GOTM turbulence module is coupled to 3D models.
+./src/parameterizations/GOTM/turbulence.F90:1775:! of all turbulence models implemented in GOTM. Results are
+./src/parameterizations/GOTM/turbulence.F90:1898:         LEVEL2 'with the ISPRAMIX length-scale (see GOTM-report)'
+./src/parameterizations/GOTM/turbulence.F90:2014:! from a 3-D model, if the {\tt turbulence} module of GOTM is used
+./src/parameterizations/GOTM/turbulence.F90:2027:!   directly from the main GOTM loop.
+./src/parameterizations/GOTM/turbulence.F90:2337:! determining variable. At the moment, GOTM implements equations
+./src/parameterizations/GOTM/turbulence.F90:2395:! described in \sect{sec:epsbalgebraic}, is available in GOTM.
+./src/parameterizations/GOTM/turbulence.F90:2706:! to do so implemented in GOTM. It is described in \sect{sec:fkCraig}.
+./src/parameterizations/GOTM/turbulence.F90:2712:! coordinate of the same name used in GOTM.
+./src/parameterizations/GOTM/turbulence.F90:2718:! This type is not implemented yet in GOTM.
+./src/parameterizations/GOTM/turbulence.F90:2846:! to do so implemented in GOTM. It is described in \sect{sec:fkCraig}.
+./src/parameterizations/GOTM/turbulence.F90:2852:! coordinate of the same name used in GOTM.
+./src/parameterizations/GOTM/turbulence.F90:2858:! This type is not implemented yet in GOTM.
+./src/parameterizations/GOTM/turbulence.F90:2986:! to do so implemented in GOTM. It is described in \sect{sec:fkCraig}.
+./src/parameterizations/GOTM/turbulence.F90:2992:! coordinate of the same name used in GOTM.
+./src/parameterizations/GOTM/turbulence.F90:2998:! This type is not implemented yet in GOTM.
+./src/parameterizations/GOTM/turbulence.F90:3121:! to do so implemented in GOTM. It is described in \sect{sec:fkCraig}.
+./src/parameterizations/GOTM/turbulence.F90:3127:! coordinate of the same name used in GOTM.
+./src/parameterizations/GOTM/turbulence.F90:3133:! This type is not implemented yet in GOTM.
+./src/parameterizations/GOTM/turbulence.F90:3259:! to do so implemented in GOTM. It is described in \sect{sec:fkCraig}.
+./src/parameterizations/GOTM/turbulence.F90:3265:! coordinate of the same name used in GOTM.
+./src/parameterizations/GOTM/turbulence.F90:3271:! This type is not implemented yet in GOTM.
+./src/parameterizations/GOTM/turbulence.F90:3533:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./src/parameterizations/GOTM/cmue_sg.F90:65:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./src/parameterizations/GOTM/variances.F90:103:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./src/parameterizations/GOTM/algebraiclength.F90:20:! abbreviations, the expressions implemented in GOTM are as follows.
+./src/parameterizations/GOTM/algebraiclength.F90:53:!   $\beta = 2$ in GOTM.
+./src/parameterizations/GOTM/algebraiclength.F90:266:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./src/parameterizations/GOTM/cmue_a.F90:212:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./src/parameterizations/GOTM/genericeq.F90:118:! implemented in GOTM and are described in \sect{sec:generate}.
+./src/parameterizations/GOTM/genericeq.F90:300:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./src/parameterizations/GOTM/epsbalgebraic.F90:58:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./src/parameterizations/GOTM/ispralength.F90:164:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./src/parameterizations/GOTM/dissipationeq.F90:12:! implemented in GOTM.
+./src/parameterizations/GOTM/dissipationeq.F90:245:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./src/parameterizations/GOTM/kbalgebraic.F90:66:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./src/parameterizations/GOTM/diff_face.F90:133:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./src/parameterizations/GOTM/tridiagonal.F90:186:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./src/parameterizations/GOTM/lengthscaleeq.F90:33:! for  ${\cal L}_z$ are implemented in GOTM, which can be activated
+./src/parameterizations/GOTM/lengthscaleeq.F90:256:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./src/parameterizations/GOTM/r_ratio.F90:38:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./src/parameterizations/GOTM/production.F90:108:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./src/parameterizations/GOTM/kpp.F90:149:! models. Presently, GOTM uses the uppermost grid point as the reference value.
+./src/parameterizations/GOTM/kpp.F90:165:! two methods have been implemented in GOTM. The first method simply evaluates
+./src/parameterizations/GOTM/kpp.F90:389:! If you call the GOTM KPP routines from a three-dimensional model, make sure
+./src/parameterizations/GOTM/kpp.F90:656:! be interpolated "in a smart way" to the water column defined by GOTM. The corresponding
+./src/parameterizations/GOTM/kpp.F90:666:! Note that for consistency, the equations of state in GOTM cannot
+./src/parameterizations/GOTM/kpp.F90:2051:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./src/parameterizations/GOTM/cmue_c.F90:188:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./src/parameterizations/GOTM/gotm_lib_version.F90:5:! !ROUTINE: Printing GOTM library version
+./src/parameterizations/GOTM/gotm_lib_version.F90:11:!  Simply prints the version number of the GOTM turbulence library to unit.
+./src/parameterizations/GOTM/gotm_lib_version.F90:26:   write(unit,*) 'GOTM library version: ',git_commit_id
+./src/parameterizations/GOTM/gotm_lib_version.F90:33:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./src/parameterizations/GOTM/cmue_rf.F90:85:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./src/parameterizations/GOTM/util.F90:66:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./src/parameterizations/GOTM/tkeeq.F90:183:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./src/parameterizations/GOTM/fk_craig.F90:40:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./src/parameterizations/GOTM/cppdefs.h:2:! definitions. Infact GOTM will not compile when this file is not
+./src/parameterizations/GOTM/internal_wave.F90:96:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./src/parameterizations/GOTM/compute_cpsi3.F90:121:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./src/parameterizations/GOTM/cmue_b.F90:108:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./src/parameterizations/GOTM/q2over2eq.F90:168:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./src/parameterizations/GOTM/tkealgebraic.F90:94:! Copyright by the GOTM-team under the GNU Public License - www.gnu.org
+./src/parameterizations/vertical/MOM_set_diffusivity.F90:26:use MOM_GOTM,                only : GOTM_CS, GOTM_init, GOTM_calculate, GOTM_calculate_vertex, GOTM_end
+./src/parameterizations/vertical/MOM_set_diffusivity.F90:27:use MOM_GOTM,                only : GOTM_at_vertex
+./src/parameterizations/vertical/MOM_set_diffusivity.F90:155:  logical :: useGOTM          !< If true, use one of the GOTM modules to find
+./src/parameterizations/vertical/MOM_set_diffusivity.F90:190:  type(GOTM_CS),             pointer :: GOTM_CSp             => NULL() !< Control structure for a child module
+./src/parameterizations/vertical/MOM_set_diffusivity.F90:455:  elseif (CS%useGOTM) then   
+./src/parameterizations/vertical/MOM_set_diffusivity.F90:456:    !GOTM has options for separate thermal and salt diffusivities.  We don't use that here, so
+./src/parameterizations/vertical/MOM_set_diffusivity.F90:460:      call GOTM_calculate_vertex(CS%GOTM_CSp, G, GV, Dt, h, tv%T, tv%S, u, v, tv%eqn_of_state, &
+./src/parameterizations/vertical/MOM_set_diffusivity.F90:464:      call GOTM_calculate(CS%GOTM_CSp, G, GV, Dt, h, tv%T, tv%S, u, v, tv%eqn_of_state, &
+./src/parameterizations/vertical/MOM_set_diffusivity.F90:586:    if (CS%useKappaShear .or. CS%use_CVMix_shear .or. CS%useGOTM) then
+./src/parameterizations/vertical/MOM_set_diffusivity.F90:2331:  logical :: KS_Vertex_Shear, GOTM_Vertex_Shear
+./src/parameterizations/vertical/MOM_set_diffusivity.F90:2680:  ! GOTM  
+./src/parameterizations/vertical/MOM_set_diffusivity.F90:2681:  CS%useGOTM = GOTM_init(param_file, G, GV, diag, Time, CS%GOTM_CSp)
+./src/parameterizations/vertical/MOM_set_diffusivity.F90:2682:  GOTM_Vertex_Shear = GOTM_at_vertex(param_file)
+./src/parameterizations/vertical/MOM_set_diffusivity.F90:2684:  ! Kappa-Shear or GOTM at Vertex
+./src/parameterizations/vertical/MOM_set_diffusivity.F90:2685:  CS%Vertex_Shear = (KS_Vertex_Shear .or. GOTM_Vertex_Shear)
+./src/parameterizations/vertical/MOM_set_diffusivity.F90:2737:  if (CS%useGOTM) call GOTM_end(CS%GOTM_CSp)
+./src/parameterizations/vertical/MOM_set_diffusivity.F90:2738:  if (associated (CS%GOTM_CSp)) deallocate (CS%GOTM_CSp)
+./src/parameterizations/vertical/MOM_GOTM.F90:1:!> Provides the suite of mixing parameterizations via GOTM
+./src/parameterizations/vertical/MOM_GOTM.F90:2:module MOM_GOTM
+./src/parameterizations/vertical/MOM_GOTM.F90:16:! Interface to GOTM modules
+./src/parameterizations/vertical/MOM_GOTM.F90:18:! Point the MOM6 variables to the GOTM variables.
+./src/parameterizations/vertical/MOM_GOTM.F90:28:public :: GOTM_init      ! Allocate the control structure and read inputs.
+./src/parameterizations/vertical/MOM_GOTM.F90:29:public :: GOTM_calculate ! Interface MOM to GOTM turbulence.
+./src/parameterizations/vertical/MOM_GOTM.F90:30:public :: GOTM_calculate_vertex ! Interface MOM to GOTM turbulence.
+./src/parameterizations/vertical/MOM_GOTM.F90:31:public :: GOTM_at_vertex
+./src/parameterizations/vertical/MOM_GOTM.F90:32:public :: GOTM_end       ! Gracefully deallocate the control structure.
+./src/parameterizations/vertical/MOM_GOTM.F90:35:!> Control structure for containing GOTM parameters/data
+./src/parameterizations/vertical/MOM_GOTM.F90:36:type, public :: GOTM_CS ; private
+./src/parameterizations/vertical/MOM_GOTM.F90:51:  real, allocatable, dimension(:,:,:) :: N2, & !< Buoyancy frequency used by GOTM [s-2]
+./src/parameterizations/vertical/MOM_GOTM.F90:52:                                         S2, & !< Shear frequency used by GOTM [s-2]
+./src/parameterizations/vertical/MOM_GOTM.F90:53:                                         P,  & !< Shear Production by GOTM [m2 s-3]
+./src/parameterizations/vertical/MOM_GOTM.F90:54:                                         B     !< Buoyancy Production by GOTM [m2 s-3]
+./src/parameterizations/vertical/MOM_GOTM.F90:65:  integer :: id_GOTM_KM = -1
+./src/parameterizations/vertical/MOM_GOTM.F90:66:  integer :: id_GOTM_KH = -1
+./src/parameterizations/vertical/MOM_GOTM.F90:67:  integer :: id_GOTM_KS = -1
+./src/parameterizations/vertical/MOM_GOTM.F90:68:  integer :: id_GOTM_S2 = -1
+./src/parameterizations/vertical/MOM_GOTM.F90:69:  integer :: id_GOTM_N2 = -1
+./src/parameterizations/vertical/MOM_GOTM.F90:70:  integer :: id_GOTM_P = -1
+./src/parameterizations/vertical/MOM_GOTM.F90:71:  integer :: id_GOTM_B = -1
+./src/parameterizations/vertical/MOM_GOTM.F90:72:  integer :: id_GOTM_Eps = -1
+./src/parameterizations/vertical/MOM_GOTM.F90:75:end type GOTM_CS
+./src/parameterizations/vertical/MOM_GOTM.F90:85:!> Initialize the GOTM module and set up diagnostics
+./src/parameterizations/vertical/MOM_GOTM.F90:86:!! Returns True if GOTM is to be used, False otherwise.
+./src/parameterizations/vertical/MOM_GOTM.F90:87:logical function GOTM_init(paramFile, G, GV, diag, Time, CS, passive)
+./src/parameterizations/vertical/MOM_GOTM.F90:95:  type(GOTM_CS),            pointer       :: CS        !< Control structure
+./src/parameterizations/vertical/MOM_GOTM.F90:105:  character(len=40) :: mod = 'MOM_GOTM' ! name of this module
+./src/parameterizations/vertical/MOM_GOTM.F90:116:  if (associated(CS)) call MOM_error(FATAL, 'MOM_GOTM_mixing, GOTM_init: '// &
+./src/parameterizations/vertical/MOM_GOTM.F90:121:  call log_version(paramFile, mod, version, 'This is the MOM wrapper to GOTM\n' // &
+./src/parameterizations/vertical/MOM_GOTM.F90:123:  call get_param(paramFile, mod, "USE_GOTM", GOTM_init, &
+./src/parameterizations/vertical/MOM_GOTM.F90:124:       "If true, turns on the GOTM wrapper to calculate\n"// &
+./src/parameterizations/vertical/MOM_GOTM.F90:127:  if (.not. GOTM_init) return
+./src/parameterizations/vertical/MOM_GOTM.F90:128:  call get_param(paramFile, mod, "GOTM_NSUBCYCLE", CS%NSubCycle, &
+./src/parameterizations/vertical/MOM_GOTM.F90:129:       "Number of times to cycle GOTM per timestep. ", default=1)
+./src/parameterizations/vertical/MOM_GOTM.F90:130:  call get_param(paramFile, mod, "GOTM_VERTEX_SHEAR", VS, &
+./src/parameterizations/vertical/MOM_GOTM.F90:134:  ! Call GOTM initialization, which reads the gotmturb.nml namelist file
+./src/parameterizations/vertical/MOM_GOTM.F90:137:  ! Initialize the GOTM tridiagonal solver, which is used within the GOTM
+./src/parameterizations/vertical/MOM_GOTM.F90:143:  ! completion all values are set to GOTM values.  GOTM handles initialization.
+./src/parameterizations/vertical/MOM_GOTM.F90:154:    ! Fill the GOTM initial condition to all grid points
+./src/parameterizations/vertical/MOM_GOTM.F90:176:    ! Fill the GOTM initial condition to all grid points
+./src/parameterizations/vertical/MOM_GOTM.F90:191:!/ Prep GOTM related Diagnostics
+./src/parameterizations/vertical/MOM_GOTM.F90:195:         register_diag_field('ocean_model','GOTM_TKE', diag%axesBi, Time, &
+./src/parameterizations/vertical/MOM_GOTM.F90:196:                             'Turbulent kinetic energy from GOTM','m2 s-2')
+./src/parameterizations/vertical/MOM_GOTM.F90:198:!         register_diag_field('ocean_model','GOTM_Dissipation', diag%axesBi, Time, &
+./src/parameterizations/vertical/MOM_GOTM.F90:199:!                             'Turbulent dissipation rate from GOTM','m2 s-3')
+./src/parameterizations/vertical/MOM_GOTM.F90:201:         register_diag_field('ocean_model','GOTM_L', diag%axesBi, Time, &
+./src/parameterizations/vertical/MOM_GOTM.F90:202:                             'Turbulent mixing length from GOTM','m')
+./src/parameterizations/vertical/MOM_GOTM.F90:203:    CS%id_GOTM_KM = &
+./src/parameterizations/vertical/MOM_GOTM.F90:204:         register_diag_field('ocean_model','GOTM_KM', diag%axesBi, Time, &
+./src/parameterizations/vertical/MOM_GOTM.F90:205:                             'Turbulent viscosity of momentum from GOTM','m2 s-1')
+./src/parameterizations/vertical/MOM_GOTM.F90:206:    CS%id_GOTM_KH = &
+./src/parameterizations/vertical/MOM_GOTM.F90:207:         register_diag_field('ocean_model','GOTM_KH', diag%axesBi, Time, &
+./src/parameterizations/vertical/MOM_GOTM.F90:208:                             'Turbulent viscosity of heat from GOTM','m2 s-1')
+./src/parameterizations/vertical/MOM_GOTM.F90:209:    CS%id_GOTM_KS = &
+./src/parameterizations/vertical/MOM_GOTM.F90:210:         register_diag_field('ocean_model','GOTM_KS', diag%axesBi, Time, &
+./src/parameterizations/vertical/MOM_GOTM.F90:211:                             'Turbulent viscosity of salt from GOTM','m2 s-1')
+./src/parameterizations/vertical/MOM_GOTM.F90:212:    CS%id_GOTM_S2 = &
+./src/parameterizations/vertical/MOM_GOTM.F90:213:         register_diag_field('ocean_model','GOTM_S2', diag%axesBi, Time, &
+./src/parameterizations/vertical/MOM_GOTM.F90:215:    CS%id_GOTM_N2 = &
+./src/parameterizations/vertical/MOM_GOTM.F90:216:         register_diag_field('ocean_model','GOTM_N2', diag%axesBi, Time, &
+./src/parameterizations/vertical/MOM_GOTM.F90:218:    CS%id_GOTM_B = &
+./src/parameterizations/vertical/MOM_GOTM.F90:219:         register_diag_field('ocean_model','GOTM_B', diag%axesBi, Time, &
+./src/parameterizations/vertical/MOM_GOTM.F90:220:                             'Buoyancy Production of TKE from GOTM','m2 s-3')
+./src/parameterizations/vertical/MOM_GOTM.F90:221:    CS%id_GOTM_P = &
+./src/parameterizations/vertical/MOM_GOTM.F90:222:         register_diag_field('ocean_model','GOTM_P', diag%axesBi, Time, &
+./src/parameterizations/vertical/MOM_GOTM.F90:223:                             'Shear Production of TKE from GOTM','m2 s-3')
+./src/parameterizations/vertical/MOM_GOTM.F90:224:    CS%id_GOTM_Eps = &
+./src/parameterizations/vertical/MOM_GOTM.F90:225:         register_diag_field('ocean_model','GOTM_EPS', diag%axesBi, Time, &
+./src/parameterizations/vertical/MOM_GOTM.F90:226:                             'TKE dissipation from GOTM','m2 s-3')
+./src/parameterizations/vertical/MOM_GOTM.F90:227:    if (CS%id_GOTM_N2.gt.0) &
+./src/parameterizations/vertical/MOM_GOTM.F90:229:    if (CS%id_GOTM_S2.gt.0) &
+./src/parameterizations/vertical/MOM_GOTM.F90:231:    if (CS%id_GOTM_P.gt.0) &
+./src/parameterizations/vertical/MOM_GOTM.F90:233:    if (CS%id_GOTM_B.gt.0) &
+./src/parameterizations/vertical/MOM_GOTM.F90:237:         register_diag_field('ocean_model','GOTM_TKE', diag%axesTi, Time, &
+./src/parameterizations/vertical/MOM_GOTM.F90:238:                             'Turbulent kinetic energy from GOTM','m2 s-2')
+./src/parameterizations/vertical/MOM_GOTM.F90:240:!         register_diag_field('ocean_model','GOTM_Dissipation', diag%axesTi, Time, &
+./src/parameterizations/vertical/MOM_GOTM.F90:241:!                             'Turbulent dissipation rate from GOTM','m2 s-3')
+./src/parameterizations/vertical/MOM_GOTM.F90:243:         register_diag_field('ocean_model','GOTM_L', diag%axesTi, Time, &
+./src/parameterizations/vertical/MOM_GOTM.F90:244:                             'Turbulent mixing length from GOTM','m')
+./src/parameterizations/vertical/MOM_GOTM.F90:245:    CS%id_GOTM_KM = &
+./src/parameterizations/vertical/MOM_GOTM.F90:246:         register_diag_field('ocean_model','GOTM_KM', diag%axesTi, Time, &
+./src/parameterizations/vertical/MOM_GOTM.F90:247:                             'Turbulent viscosity of momentum from GOTM','m2 s-1')
+./src/parameterizations/vertical/MOM_GOTM.F90:248:    CS%id_GOTM_KH = &
+./src/parameterizations/vertical/MOM_GOTM.F90:249:         register_diag_field('ocean_model','GOTM_KH', diag%axesTi, Time, &
+./src/parameterizations/vertical/MOM_GOTM.F90:250:                             'Turbulent viscosity of heat from GOTM','m2 s-1')
+./src/parameterizations/vertical/MOM_GOTM.F90:251:    CS%id_GOTM_KS = &
+./src/parameterizations/vertical/MOM_GOTM.F90:252:         register_diag_field('ocean_model','GOTM_KS', diag%axesTi, Time, &
+./src/parameterizations/vertical/MOM_GOTM.F90:253:                             'Turbulent viscosity of salt from GOTM','m2 s-1')
+./src/parameterizations/vertical/MOM_GOTM.F90:254:    CS%id_GOTM_S2 = &
+./src/parameterizations/vertical/MOM_GOTM.F90:255:         register_diag_field('ocean_model','GOTM_S2', diag%axesTi, Time, &
+./src/parameterizations/vertical/MOM_GOTM.F90:257:    CS%id_GOTM_N2 = &
+./src/parameterizations/vertical/MOM_GOTM.F90:258:         register_diag_field('ocean_model','GOTM_N2', diag%axesTi, Time, &
+./src/parameterizations/vertical/MOM_GOTM.F90:260:    CS%id_GOTM_B = &
+./src/parameterizations/vertical/MOM_GOTM.F90:261:         register_diag_field('ocean_model','GOTM_B', diag%axesTi, Time, &
+./src/parameterizations/vertical/MOM_GOTM.F90:262:                             'Buoyancy Production of TKE from GOTM','m2 s-3')
+./src/parameterizations/vertical/MOM_GOTM.F90:263:    CS%id_GOTM_P = &
+./src/parameterizations/vertical/MOM_GOTM.F90:264:         register_diag_field('ocean_model','GOTM_P', diag%axesTi, Time, &
+./src/parameterizations/vertical/MOM_GOTM.F90:265:                             'Shear Production of TKE from GOTM','m2 s-3')
+./src/parameterizations/vertical/MOM_GOTM.F90:266:    CS%id_GOTM_Eps = &
+./src/parameterizations/vertical/MOM_GOTM.F90:267:         register_diag_field('ocean_model','GOTM_EPS', diag%axesTi, Time, &
+./src/parameterizations/vertical/MOM_GOTM.F90:268:                             'TKE dissipation from GOTM','m2 s-3')
+./src/parameterizations/vertical/MOM_GOTM.F90:269:    if (CS%id_GOTM_N2.gt.0) &
+./src/parameterizations/vertical/MOM_GOTM.F90:271:    if (CS%id_GOTM_S2.gt.0) &
+./src/parameterizations/vertical/MOM_GOTM.F90:273:    if (CS%id_GOTM_P.gt.0) &
+./src/parameterizations/vertical/MOM_GOTM.F90:275:    if (CS%id_GOTM_B.gt.0) &
+./src/parameterizations/vertical/MOM_GOTM.F90:280:end function GOTM_init
+./src/parameterizations/vertical/MOM_GOTM.F90:285:subroutine GOTM_end(CS)
+./src/parameterizations/vertical/MOM_GOTM.F90:286:  type(GOTM_CS), pointer :: CS
+./src/parameterizations/vertical/MOM_GOTM.F90:288:end subroutine GOTM_end
+./src/parameterizations/vertical/MOM_GOTM.F90:291:!> This subroutine performs the actual stepping of the GOTM turbulence scheme.
+./src/parameterizations/vertical/MOM_GOTM.F90:292:!!  NOTE: With GOTM, many flavors of TKE-based vertical mixing parameterizations
+./src/parameterizations/vertical/MOM_GOTM.F90:295:subroutine GOTM_calculate(CS, G, GV, DT, h, Temp, Salt, u, v, EOS, uStar,&
+./src/parameterizations/vertical/MOM_GOTM.F90:299:  type(GOTM_CS),                           pointer          :: CS     !< Control structure
+./src/parameterizations/vertical/MOM_GOTM.F90:302:  real, intent(in)                                          :: Dt     !< Time step of MOM6 [s] for GOTM turbulence solver.
+./src/parameterizations/vertical/MOM_GOTM.F90:314:  real, dimension(SZI_(G),SZJ_(G),SZK_(G)+1), intent(inout) :: Kt     !< (in)  Vertical diffusivity of heat w/o GOTM [m2 s-1]
+./src/parameterizations/vertical/MOM_GOTM.F90:315:                                                                      !< (out) Vertical diffusivity including GOTM [m2 s-1]
+./src/parameterizations/vertical/MOM_GOTM.F90:316:  real, dimension(SZI_(G),SZJ_(G),SZK_(G)+1), intent(inout) :: Ks     !< (in)  Vertical diffusivity of salt w/o GOTM [m2 s-1]
+./src/parameterizations/vertical/MOM_GOTM.F90:317:                                                                      !< (out) Vertical diffusivity including GOTM [m2 s-1]
+./src/parameterizations/vertical/MOM_GOTM.F90:318:  real, dimension(SZI_(G),SZJ_(G),SZK_(G)+1), intent(inout) :: Kv     !< (in)  Vertical viscosity w/o GOTM [m2 s-1]
+./src/parameterizations/vertical/MOM_GOTM.F90:319:                                                                      !< (out) Vertical viscosity including GOTM [m2 s-1]
+./src/parameterizations/vertical/MOM_GOTM.F90:325:  real, dimension( 0:G%ke )   :: g_h  ! 1-d level thickness in [m] for GOTM
+./src/parameterizations/vertical/MOM_GOTM.F90:380:      !compute NN and SS on the GOTM vertical grid
+./src/parameterizations/vertical/MOM_GOTM.F90:475:      !   GOTM do_turbulence format:
+./src/parameterizations/vertical/MOM_GOTM.F90:498:        !Fill GOTM arrays for time stepping
+./src/parameterizations/vertical/MOM_GOTM.F90:566:        !Fill MOM arrays from GOTM
+./src/parameterizations/vertical/MOM_GOTM.F90:577:        if (CS%id_GOTM_S2.gt.0) &
+./src/parameterizations/vertical/MOM_GOTM.F90:579:        if (CS%id_GOTM_N2.gt.0) &
+./src/parameterizations/vertical/MOM_GOTM.F90:581:        if (CS%id_GOTM_B.gt.0) &
+./src/parameterizations/vertical/MOM_GOTM.F90:583:        if (CS%id_GOTM_P.gt.0) &
+./src/parameterizations/vertical/MOM_GOTM.F90:603:  if (CS%id_GOTM_KM.gt.0)     call post_data(CS%id_GOTM_KM    , Kv , CS%diag)
+./src/parameterizations/vertical/MOM_GOTM.F90:604:  if (CS%id_GOTM_KH.gt.0)     call post_data(CS%id_GOTM_KH    , Kt , CS%diag)
+./src/parameterizations/vertical/MOM_GOTM.F90:605:  if (CS%id_GOTM_KS.gt.0)     call post_data(CS%id_GOTM_KS    , Ks , CS%diag)
+./src/parameterizations/vertical/MOM_GOTM.F90:606:  if (CS%id_GOTM_N2.gt.0)     call post_data(CS%id_GOTM_N2    , CS%N2 , CS%diag)
+./src/parameterizations/vertical/MOM_GOTM.F90:607:  if (CS%id_GOTM_S2.gt.0)     call post_data(CS%id_GOTM_S2    , CS%S2 , CS%diag)
+./src/parameterizations/vertical/MOM_GOTM.F90:608:  if (CS%id_GOTM_B.gt.0)      call post_data(CS%id_GOTM_B     , CS%B  , CS%diag)
+./src/parameterizations/vertical/MOM_GOTM.F90:609:  if (CS%id_GOTM_P.gt.0)      call post_data(CS%id_GOTM_P     , CS%P  , CS%diag)
+./src/parameterizations/vertical/MOM_GOTM.F90:610:  if (CS%id_GOTM_Eps.gt.0)    call post_data(CS%id_GOTM_Eps   , Eps, CS%diag)
+./src/parameterizations/vertical/MOM_GOTM.F90:619:end subroutine GOTM_calculate
+./src/parameterizations/vertical/MOM_GOTM.F90:621:!> This subroutine performs the actual stepping of the GOTM turbulence scheme.
+./src/parameterizations/vertical/MOM_GOTM.F90:622:!!  NOTE: With GOTM, many flavors of TKE-based vertical mixing parameterizations
+./src/parameterizations/vertical/MOM_GOTM.F90:625:subroutine GOTM_calculate_vertex(CS, G, GV, DT, h, Temp, Salt, u, v, EOS, uStar,&
+./src/parameterizations/vertical/MOM_GOTM.F90:629:  type(GOTM_CS),                           pointer          :: CS     !< Control structure
+./src/parameterizations/vertical/MOM_GOTM.F90:632:  real, intent(in)                                          :: Dt     !< Time step of MOM6 [s] for GOTM turbulence solver.
+./src/parameterizations/vertical/MOM_GOTM.F90:644:  real, dimension(SZI_(G),SZJ_(G),SZK_(G)+1), intent(inout) :: Kt     !< (in)  Vertical diffusivity of heat w/o GOTM [m2 s-1]
+./src/parameterizations/vertical/MOM_GOTM.F90:645:                                                                      !< (out) Vertical diffusivity including GOTM [m2 s-1]
+./src/parameterizations/vertical/MOM_GOTM.F90:646:  real, dimension(SZI_(G),SZJ_(G),SZK_(G)+1), intent(inout) :: Ks     !< (in)  Vertical diffusivity of salt w/o GOTM [m2 s-1]
+./src/parameterizations/vertical/MOM_GOTM.F90:647:                                                                      !< (out) Vertical diffusivity including GOTM [m2 s-1]
+./src/parameterizations/vertical/MOM_GOTM.F90:648:  real, dimension(SZIB_(G),SZJB_(G),SZK_(G)+1), intent(inout) :: Kv_Bu !< (in)  Vertical viscosity w/o GOTM [m2 s-1]
+./src/parameterizations/vertical/MOM_GOTM.F90:649:                                                                      !< (out) Vertical viscosity including GOTM [m2 s-1]
+./src/parameterizations/vertical/MOM_GOTM.F90:662:  real, dimension( 0:G%ke )   :: g_h  ! 1-d level thickness in [m] for GOTM
+./src/parameterizations/vertical/MOM_GOTM.F90:783:      !compute NN and SS on the GOTM vertical grid
+./src/parameterizations/vertical/MOM_GOTM.F90:879:      !   GOTM do_turbulence format:
+./src/parameterizations/vertical/MOM_GOTM.F90:896:        !Fill GOTM arrays for time stepping
+./src/parameterizations/vertical/MOM_GOTM.F90:933:        !Fill MOM arrays from GOTM
+./src/parameterizations/vertical/MOM_GOTM.F90:952:        if (CS%id_GOTM_S2.gt.0) &
+./src/parameterizations/vertical/MOM_GOTM.F90:954:        if (CS%id_GOTM_N2.gt.0) &
+./src/parameterizations/vertical/MOM_GOTM.F90:956:        if (CS%id_GOTM_B.gt.0) &
+./src/parameterizations/vertical/MOM_GOTM.F90:958:        if (CS%id_GOTM_P.gt.0) &
+./src/parameterizations/vertical/MOM_GOTM.F90:1073:  if (CS%id_GOTM_Eps.gt.0)    call post_data(CS%id_GOTM_Eps   , CS%EPS, CS%diag)
+./src/parameterizations/vertical/MOM_GOTM.F90:1075:  if (CS%id_GOTM_KM.gt.0)     call post_data(CS%id_GOTM_KM    , CS%Kv , CS%diag)
+./src/parameterizations/vertical/MOM_GOTM.F90:1076:  if (CS%id_GOTM_KH.gt.0)     call post_data(CS%id_GOTM_KH    , CS%Kt , CS%diag)
+./src/parameterizations/vertical/MOM_GOTM.F90:1077:  if (CS%id_GOTM_KS.gt.0)     call post_data(CS%id_GOTM_KS    , CS%Ks , CS%diag)
+./src/parameterizations/vertical/MOM_GOTM.F90:1078:  if (CS%id_GOTM_N2.gt.0)     call post_data(CS%id_GOTM_N2    , CS%N2 , CS%diag)
+./src/parameterizations/vertical/MOM_GOTM.F90:1079:  if (CS%id_GOTM_S2.gt.0)     call post_data(CS%id_GOTM_S2    , CS%S2 , CS%diag)
+./src/parameterizations/vertical/MOM_GOTM.F90:1080:  if (CS%id_GOTM_B.gt.0)      call post_data(CS%id_GOTM_B     , CS%B  , CS%diag)
+./src/parameterizations/vertical/MOM_GOTM.F90:1081:  if (CS%id_GOTM_P.gt.0)      call post_data(CS%id_GOTM_P     , CS%P  , CS%diag)
+./src/parameterizations/vertical/MOM_GOTM.F90:1090:end subroutine GOTM_calculate_vertex
+./src/parameterizations/vertical/MOM_GOTM.F90:1092:logical function GOTM_at_vertex(param_file)
+./src/parameterizations/vertical/MOM_GOTM.F90:1096:  character(len=40)  :: mdl = "MOM_GOTM"  ! This module's name.
+./src/parameterizations/vertical/MOM_GOTM.F90:1097:  logical :: do_GOTM
+./src/parameterizations/vertical/MOM_GOTM.F90:1098:  ! This function returns true only if the parameters "USE_GOTM" and "GOTM_VERTEX_SHEAR" are both true.
+./src/parameterizations/vertical/MOM_GOTM.F90:1100:  GOTM_at_vertex = .false.
+./src/parameterizations/vertical/MOM_GOTM.F90:1102:  call get_param(param_file, mdl, "USE_GOTM", do_GOTM, &
+./src/parameterizations/vertical/MOM_GOTM.F90:1104:  if (do_GOTM) &
+./src/parameterizations/vertical/MOM_GOTM.F90:1105:    call get_param(param_file, mdl, "GOTM_VERTEX_SHEAR", GOTM_at_vertex, &
+./src/parameterizations/vertical/MOM_GOTM.F90:1106:                 "If true, do the calculations of the GOTM mixing "//&
+./src/parameterizations/vertical/MOM_GOTM.F90:1110:end function GOTM_at_vertex
+./src/parameterizations/vertical/MOM_GOTM.F90:1112:end module MOM_GOTM
+./src/parameterizations/vertical/MOM_set_viscosity.F90:27:use MOM_GOTM,          only : GOTM_at_vertex
+./src/parameterizations/vertical/MOM_set_viscosity.F90:2696:  logical :: adiabatic, useKPP, useEPBL, use_ideal_age,useGOTM, GOTM_is_vertex
+./src/parameterizations/vertical/MOM_set_viscosity.F90:2710:  useGOTM = .false. ; GOTM_is_vertex = .false.
+./src/parameterizations/vertical/MOM_set_viscosity.F90:2716:    call get_param(param_file, mdl, "USE_GOTM", useGOTM, &
+./src/parameterizations/vertical/MOM_set_viscosity.F90:2717:                "If true, use GOTM diffusivities.",      &
+./src/parameterizations/vertical/MOM_set_viscosity.F90:2719:    GOTM_is_vertex    = GOTM_at_vertex(param_file)
+./src/parameterizations/vertical/MOM_set_viscosity.F90:2738:  if (use_kappa_shear .or. useKPP .or. useEPBL .or. use_CVMix_shear .or. use_CVMix_conv .or. useGOTM) then
+./src/parameterizations/vertical/MOM_set_viscosity.F90:2746:      (useGOTM .and. .not.GOTM_is_vertex ) ) then
+./src/parameterizations/vertical/MOM_set_viscosity.F90:2762:  if (useGOTM) then
+./src/parameterizations/vertical/MOM_set_viscosity.F90:2763:     !if (GOTM_TKE_AT T)
+./src/parameterizations/vertical/MOM_set_viscosity.F90:2780:    if (GOTM_is_vertex) then
